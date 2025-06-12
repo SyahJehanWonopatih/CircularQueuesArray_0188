@@ -59,7 +59,32 @@ class queues {
             int front_position = front;
             int rear_position = rear;
 
-            
+            if(front == -1) {
+                cout << "Queue is empty\n";
+                return;
+            }
+            cout << "\nElements in the queue are: ";
+
+            if(front_position <= rear_position) {
+                while(front_position <= rear_position) {
+                    cout << queue_array[front_position] << "  ";
+                    front_position++;
+                }
+                cout << endl;
+            }
+            else {
+                while(front_position <= max - 1) {
+                    cout << queue_array[front_position] << "  ";
+                    front_position++;
+                }
+                front_position = 0;
+
+                while(front_position <= rear_position) {
+                    cout << queue_array[front_position] << "  ";
+                    front_position++;
+                }
+                cout << endl;
+            }
         }
 };
 
