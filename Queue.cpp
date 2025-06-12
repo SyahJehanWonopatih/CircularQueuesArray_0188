@@ -23,5 +23,18 @@ class queues {
                 return;
             }
 
-            
+            if(front == -1) {
+                front = 0;
+                rear = 0;
+            }
+            else {
+                if(rear == -1) 
+                    rear = 0;
+                else
+                    rear = rear + 1; 
+            }
+            queue_array[rear] = num;
+        }
+
+
 };
