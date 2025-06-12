@@ -36,5 +36,13 @@ class queues {
             queue_array[rear] = num;
         }
 
+        void remove() {
+            if(front == -1) {
+                cout << "Queue underflow\n";
+                return;
+            }
+           
+        }
 
 };
+
