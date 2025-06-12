@@ -88,3 +88,9 @@ class queues {
         }
 };
 
+int main() {
+    queues q;
+    char ch;
+
+
+}
